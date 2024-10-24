@@ -32,4 +32,4 @@ createServer((peticion,respuesta) => {
             servirFichero(respuesta,"./404.html",contentType("html"),404);
         });
     }
-}).listen(4000);
+}).listen(process.env.PORT || 4000);
